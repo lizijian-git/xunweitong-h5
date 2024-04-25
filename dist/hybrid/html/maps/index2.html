@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" />
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+		<title>谷歌地图-marker</title>
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<script src="./js/lib/common.js"></script>
+		<script src="./js/lib/toast.js"></script>
+		<style>
+			.fun-box {
+				width: 100%;
+				position: fixed;
+				left: 0;
+				bottom: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+			}
+
+			.btn {
+				width: 90%;
+				height: 40px;
+				border: 1px solid #f1f1f1;
+				background-color: #5ac725;
+				color: #fff;
+				border-radius: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 地图 -->
+		<div id="map"></div>
+		<!-- css loading动画 -->
+		<div class="loader" id="loader"></div>
+		<div class="fun-box">
+<!-- 			<div class="btn btn1" id="btn1" onclick="myBtn1()">绘制marker</div>
+			<div class="btn btn2" id="btn2" onclick="myBtn2()">清除marker点</div> -->
+			<div class="btn btn1" id="btn1" onclick="signBtn()">巡檢點位打卡</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.2.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiQdUlA2QrEBEaZthoj7B18HTz6sxU_3I&libraries=places&callback=initMap"
+		async defer></script>
+	<script src="./js/index2.js"></script>
+</html>
